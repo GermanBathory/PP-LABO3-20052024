@@ -6,14 +6,14 @@
 header {
   padding: 20px 20px;
   background-color: #4682b4;
-  
+  background-image: url(../assets/images/background.jpg);
   background-repeat: no-repeat;
   background-position: center center;
 
   flex-direction: column;
   justify-content: space-between;
 
-  height: 50vh;
+  height: 80vh;
 
   font-family: poppins, sans-serif;
 }
@@ -22,6 +22,7 @@ header {
   padding-top: 10px;
   flex-direction: row;
   justify-content: space-between;
+  
 }
 
 header nav ul,
@@ -44,11 +45,14 @@ footer nav ul li a {
 
 header h1 {
   
+  color: white;
   width: 700px;
-  font-size: 50px;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
+  font-size: 30px;
+}
+
+header img {
+  width: 3rem;
+  height: 5rem;
 }
 
 footer {
@@ -67,7 +71,7 @@ footer {
 
 
 .container-sections {
-  width: 100%;
+  width: 80%;
   gap: 3rem;
 }
 

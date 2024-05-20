@@ -4,8 +4,8 @@ form {
   flex-direction: column;
   align-items: center;
 
-  width: 100%;
-  max-width: 80%;
+  width: 80%;
+  max-width: 60%;
 
   padding: 1rem;
   border-radius: 10px;
@@ -17,13 +17,20 @@ form {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content:space-between;
 
   width: 100%;
-  max-width: 80%;
+  max-width: 50%;
 }
 
 .btn {
   background: green;
+  color: white;
+
+  padding: 0.5rem;
+}
+.btnRojo {
+  background: red;
   color: white;
 
   padding: 0.5rem;

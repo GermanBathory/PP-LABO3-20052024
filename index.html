@@ -11,12 +11,12 @@
 
     <script src="./js/index.js" type="module" defer></script>
 
-    <title>Simulador Primer Parcial</title>
+    <title>Primer Parcial - Laboratorio III</title>
   </head>
   <body>
     <header class="flex">
       <div class="navegacion flex">
-        <img src="" alt="Logo Principal" />
+        <img src="/assets/images/logo.svg" alt="Logo Principal" />
 
         <nav>
           <ul class="flex">
@@ -28,107 +28,105 @@
         </nav>
       </div>
 
-      <h1>Administración</h1>
+      <h1>Administrador de <br/> Planetas</h1>   
+      
     </header>
 
     <div class="container-sections">
       <section>
         <form action="" method="post" id="form-item">
+          <h2>Información del Anuncio</h2>
           <input type="number" name="id" id="id" hidden />
 
           <div class="form-group">
-            <label for="Titulo">TITULO:</label>
+            <label for="Nombre">Nombre</label>
 
             <input
               type="text"
               required
-              name="titulo"
-              id="titulo"
-              placeholder="Titulo"
+              name="nombre"
+              id="nombre"
+              placeholder="Ingrese Nombre..."
             />
           </div>
 
           <div class="form-group">
-            <label for="Transaccion">TRANSACCION</label>
-
-            <input
-              type="radio"
-              required
-              name="transaccion"
-              id="transaccion"
-              value="VENTA"
-            />VENTA
-
-            <input
-              type="radio"
-              required
-              name="transaccion"
-              id="transaccion"
-              value="ALQUILER"
-            />ALQUILER
-
-          </div>
-
-          <div class="form-group">
-            <label for="Descripcion">DESCRIPCION:</label>
-
-            <input
-              type="text"
-              required
-              name="Descripcion"
-              id="Descripcion"
-              placeholder="Descripcion"
-            />
-
-          </div>
-
-          <div class="form-group">
-            <label for="precio">PRECIO:</label>
+            <label for="Tamaño">Tamaño</label>
 
             <input
               type="number"
               required
-              name="precio"
-              id="precio"
-              placeholder="Precio"
+              name="tamaño"
+              id="tamaño"
+              placeholder="Ingrese Tamaño..."
+            />
+
+          </div>
+
+          <div class="form-group">
+            <label for="masa">Masa</label>
+
+            <input
+              type="text"
+              required
+              name="masa"
+              id="masa"
+              placeholder="Ingrese masa..."
             />
           </div>
           
           <div class="form-group">
-            <label for="puertas">Puertas:</label>
+            <label for="tipo">Tipo</label>
 
-            <input
-              type="number"
-              required
-              name="puertas"
-              id="puertas"
-              placeholder="Puertas"
-            />
-
-            <label for="kms">Kms:</label>
-
-            <input
-              type="number"
-              required
-              name="kms"
-              id="kms"
-              placeholder="Kms"
-            />
-
-            <label for="potencia">Potencia:</label>
-
-            <input
-              type="number"
-              required
-              name="potencia"
-              id="potencia"
-              placeholder="Potencia"
-            />
-            
+            <select name="tipo" id="tipo">
+              <option value="" disabled selected>Seleccione</option>
+              <option value="rocoso">Rocoso</option>
+              <option value="gaseoso">Gaseoso</option>
+              <option value="helado">Helado</option>
+              <option value="enano">Enano</option>
+            </select>         
           </div>
 
           <div class="form-group">
+            <label for="distancia">Distancia al Sol:</label>
+
+            <input
+              type="number"
+              required
+              name="distancia"
+              id="distancia"
+              placeholder="Ingrese Distancia..."
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="vida">Presenta Vida</label>
+            <input type="checkbox" id="cboxvida" value="vida" />
+          </div>
+
+          <div class="form-group">
+            <label for="anillo">Presenta Anillo</label>
+            <input type="checkbox" id="cboxanillo" value="anillo" />
+          </div>
+
+          <div class="form-group">
+            <label for="composicion">Composición Atmosférica</label>
+
+            <input
+              type="textbox"
+              required
+              name="composicion"
+              id="composicion"
+              placeholder="Ingrese Composición..."
+            />
+          </div>
+          
+
+          <div class="form-group">
             <button type="submit" class="btn">Guardar</button>
+            <button type="submit" class="btn btnRojo">Cancelar</button>
+            <button type="submit" class="btn btnRojo">Eliminar</button>
+
           </div>
         </form>
 
@@ -155,7 +153,7 @@
     </div>
 
     <div id="spinner" class="spinner">
-      <img src="/assets/images/pets_20dp_FILL0_wght400_GRAD0_opsz20.svg" alt="Spinner" class="spinner-img">
+      <img src="/assets/images/logo.svg" alt="Spinner" class="spinner-img">
     </div>
 
     <footer class="flex">
