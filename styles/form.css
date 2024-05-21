@@ -20,7 +20,7 @@ form {
   justify-content:space-between;
 
   width: 100%;
-  max-width: 50%;
+  max-width: 80%;
 }
 
 .btn {
@@ -32,6 +32,4 @@ form {
 .btnRojo {
   background: red;
   color: white;
-
-  padding: 0.5rem;
 }

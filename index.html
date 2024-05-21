@@ -112,20 +112,15 @@
           <div class="form-group">
             <label for="composicion">Composición Atmosférica</label>
 
-            <input
-              type="textbox"
-              required
-              name="composicion"
-              id="composicion"
-              placeholder="Ingrese Composición..."
-            />
+            <textarea
+            name="composicion" rows="5" cols="20">Ingrese Composición...</textarea>
           </div>
           
 
           <div class="form-group">
-            <button type="submit" class="btn">Guardar</button>
-            <button type="submit" class="btn btnRojo">Cancelar</button>
-            <button type="submit" class="btn btnRojo">Eliminar</button>
+            <button type="button" class="btn">Guardar</button>
+            <button type="button" class="btn btnRojo">Cancelar</button>
+            <button type="button" class="btn btnRojo">Eliminar</button>
 
           </div>
         </form>
@@ -133,16 +128,21 @@
         <br /><br /><br /><br /><br />
 
         <div class="container-btn-delete-all">
-          <button type="button" id="btn-delete-all" class="btn">Borrar Todo</button>
+          <button type="button" id="btn-delete-all" class="btn btnRojo">Borrar Todo</button>
         </div>
 
         <div class="container-table flex">
           <table id="table-items" class="table-items table-stripped flex">
             <thead>
               <tr class="flex">
-                <th>ID</th>
-                <th>Titulo</th>
-                <th>Precio</th>
+                <th>Nombre</th>
+                <th>Tamaño</th>
+                <th>Masa</th>
+                <th>Tipo</th>
+                <th>Distancia al sol</th>
+                <th>Posee Anillo</th>
+                <th>Presencia de Vida</th>
+                <th>Composición Atmosférica</th>
               </tr>
             </thead> 
 

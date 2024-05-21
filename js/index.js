@@ -1,3 +1,4 @@
+import PlanetaBase from "./PlanetaBase.js";
 import { Casa } from "./casa.js";
 import { leer, escribir, limpiar, jsonToObject, objectToJson } from "./local-storage-async.js";
 import { mostrarSpinner, ocultarSpinner } from "./spinner.js";
@@ -23,10 +24,11 @@ async function loadItems() {
   const objetos = jsonToObject(str) || [];
   
   objetos.forEach(obj => {
-    const model = new Casa(
-        obj.id,
-        obj.titulo,
-        obj.precio
+    const model = new PlanetaBase(
+        obj.nombre,
+        obj.tamaño,
+        obj.masa,
+        obj.tipo
     );
   
     items.push(model);
